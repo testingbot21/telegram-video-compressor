@@ -4,7 +4,7 @@ import subprocess
 from telegram import Update
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext
 
-BOT_TOKEN = "YOUR_BOT_TOKEN"
+BOT_TOKEN = "520499803:AAEZDxiwsg-O5CO3Vk3QRlvNbds4Bs4sHZc"
 
 VIDEO_DIR = "./videos/"
 os.makedirs(VIDEO_DIR, exist_ok=True)
