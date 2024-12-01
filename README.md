@@ -28,16 +28,16 @@ A Telegram bot that validates video URLs, downloads the videos, compresses them 
 
 2. Install the required Python packages:
 
-  ```bash
-  pip install -r requirements.txt
-  ```
+   ```bash
+   pip install -r requirements.txt
+   ```
 
 3. Install FFMPEG on your system:
 
-  ```bash
-  sudo apt update
-  sudo apt install ffmpeg
-  ```
+   ```bash
+   sudo apt update
+   sudo apt install ffmpeg
+   ```
 
 4. Set up your bot token:
 
