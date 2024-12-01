@@ -11,9 +11,11 @@ A Telegram bot that validates video URLs, downloads the videos, compresses them 
 - Compresses the video using FFMPEG with efficient settings (`libx264`, `crf 32`).
 - Sends the compressed video back to the user as a downloadable file.
 
-![Telegram Video Compressor Bot](demo.jpg)
+## Convert 377 MB video to 27MB in minutes by this Telegram bot!
 
 ![Telegram Video Compressor Bot](telegram.jpg)
+
+![Telegram Video Compressor Bot](demo.jpg)
 
 ## Installation
 
