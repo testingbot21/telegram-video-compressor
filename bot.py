@@ -4,7 +4,7 @@ import subprocess
 from telegram import Update
 from dotenv import load_dotenv
 from flask import Flask, send_from_directory
-from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext
+from telegram.ext import Updater, CommandHandler, MessageHandler, filters, CallbackContext
 
 load_dotenv()
 
@@ -82,7 +82,7 @@ def main():
     dispatcher = updater.dispatcher
 
     dispatcher.add_handler(CommandHandler("start", start))
-    dispatcher.add_handler(MessageHandler(Filters.text & ~Filters.command, handle_url))
+    dispatcher.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_url))
 
     from threading import Thread
     flask_thread = Thread(target=app.run, kwargs={"host": "0.0.0.0", "port": 5000})
